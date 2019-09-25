@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XvW-5o-PAG">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lista Anime-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimeProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="msQ-Ih-269">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92747130906848696" green="0.062543725332390165" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rIc-pa-QqL">
+                                    <size key="itemSize" width="198" height="254"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="animeCell" id="8K0-kw-Ync" customClass="AnimeCell" customModule="AnimeProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="198" height="254"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="254"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwE-Dj-9Gh">
+                                                    <rect key="frame" x="34" y="169" width="128" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6RA-rB-54o">
+                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="148"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVO-Gd-Yua">
+                                                    <rect key="frame" x="34" y="213" width="128" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.98088600368080692" green="0.96231789464187789" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="genero" destination="JVO-Gd-Yua" id="zwD-yJ-Tvf"/>
+                                            <outlet property="image" destination="6RA-rB-54o" id="caS-eP-M3q"/>
+                                            <outlet property="titulo" destination="IwE-Dj-9Gh" id="FFa-TB-Q0w"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lista Anime" id="xzD-Z6-k7c"/>
+                    <connections>
+                        <outlet property="animeCollection" destination="msQ-Ih-269" id="MQj-ho-pzg"/>
+                        <segue destination="6ZT-Dd-wrP" kind="show" identifier="cellDetalle" id="FUb-jB-lup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="640.57971014492762" y="126.5625"/>
+        </scene>
+        <!--Detalle Anime-->
+        <scene sceneID="7Zb-6r-0hq">
+            <objects>
+                <viewController storyboardIdentifier="detalleAnime" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6ZT-Dd-wrP" customClass="DetalleAnime" customModule="AnimeProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ZV-gN-KaD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LRS-hj-qr0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="314"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BH-RX-zcT">
+                                <rect key="frame" x="20" y="410" width="374" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb9-Dc-Gfp">
+                                <rect key="frame" x="31" y="454" width="352" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LRS-hj-qr0" firstAttribute="leading" secondItem="4ZV-gN-KaD" secondAttribute="leading" id="0Ou-sU-WJA"/>
+                            <constraint firstItem="0BH-RX-zcT" firstAttribute="leading" secondItem="4ZV-gN-KaD" secondAttribute="leadingMargin" id="1mg-Mg-30f"/>
+                            <constraint firstItem="niK-GA-MmM" firstAttribute="bottom" secondItem="vb9-Dc-Gfp" secondAttribute="bottom" constant="387" id="2H7-nB-ddm"/>
+                            <constraint firstItem="LRS-hj-qr0" firstAttribute="top" secondItem="niK-GA-MmM" secondAttribute="top" id="4pP-fE-YH3"/>
+                            <constraint firstItem="LRS-hj-qr0" firstAttribute="centerX" secondItem="0BH-RX-zcT" secondAttribute="centerX" id="6MP-Io-Lld"/>
+                            <constraint firstAttribute="trailing" secondItem="LRS-hj-qr0" secondAttribute="trailing" id="ELN-IE-3Qy"/>
+                            <constraint firstItem="vb9-Dc-Gfp" firstAttribute="top" secondItem="0BH-RX-zcT" secondAttribute="bottom" constant="8" id="R3y-d2-z3M"/>
+                            <constraint firstItem="niK-GA-MmM" firstAttribute="trailing" secondItem="vb9-Dc-Gfp" secondAttribute="trailing" constant="31" id="oDZ-d8-HxN"/>
+                            <constraint firstItem="vb9-Dc-Gfp" firstAttribute="leading" secondItem="niK-GA-MmM" secondAttribute="leading" constant="31" id="obw-d7-dfV"/>
+                            <constraint firstItem="0BH-RX-zcT" firstAttribute="top" secondItem="LRS-hj-qr0" secondAttribute="bottom" constant="8" symbolic="YES" id="wfu-DV-fS1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="niK-GA-MmM"/>
+                    </view>
+                    <connections>
+                        <outlet property="descripcion" destination="vb9-Dc-Gfp" id="BJt-7d-zqv"/>
+                        <outlet property="genero" destination="0BH-RX-zcT" id="nGV-Ua-L4s"/>
+                        <outlet property="image" destination="LRS-hj-qr0" id="N8m-eg-FDN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aca-oF-Ug9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1408.6956521739132" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pZN-F2-Rxm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XvW-5o-PAG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ejz-nJ-wgM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7O2-Ts-YiU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggv-ng-qed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="127"/>
+        </scene>
+    </scenes>
+</document>

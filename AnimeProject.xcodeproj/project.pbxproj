@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66863F08D6BF9FC4EE3E385D /* Pods_AnimeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E40E31E44447AA593458908 /* Pods_AnimeProject.framework */; };
+		68A064F8233AA01D00E3894C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A064F7233AA01D00E3894C /* AppDelegate.swift */; };
+		68A064FA233AA01D00E3894C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A064F9233AA01D00E3894C /* ViewController.swift */; };
+		68A064FD233AA01D00E3894C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A064FB233AA01D00E3894C /* Main.storyboard */; };
+		68A064FF233AA01E00E3894C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A064FE233AA01E00E3894C /* Assets.xcassets */; };
+		68A06502233AA01E00E3894C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A06500233AA01E00E3894C /* LaunchScreen.storyboard */; };
+		68A0650B233AA78000E3894C /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0650A233AA78000E3894C /* Anime.swift */; };
+		68A0650D233AA7AC00E3894C /* AnimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0650C233AA7AC00E3894C /* AnimeCell.swift */; };
+		68A0650F233AA7CA00E3894C /* DetalleAnime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0650E233AA7CA00E3894C /* DetalleAnime.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		141E588C0BA5153988A04AD5 /* Pods-AnimeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimeProject/Pods-AnimeProject.debug.xcconfig"; sourceTree = "<group>"; };
+		382E514BA23E0EC4DC30B64D /* Pods-AnimeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimeProject/Pods-AnimeProject.release.xcconfig"; sourceTree = "<group>"; };
+		68A064F4233AA01D00E3894C /* AnimeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A064F7233AA01D00E3894C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68A064F9233AA01D00E3894C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68A064FC233AA01D00E3894C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68A064FE233AA01E00E3894C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68A06501233AA01E00E3894C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68A06503233AA01E00E3894C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68A0650A233AA78000E3894C /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		68A0650C233AA7AC00E3894C /* AnimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCell.swift; sourceTree = "<group>"; };
+		68A0650E233AA7CA00E3894C /* DetalleAnime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleAnime.swift; sourceTree = "<group>"; };
+		7E40E31E44447AA593458908 /* Pods_AnimeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68A064F1233AA01D00E3894C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66863F08D6BF9FC4EE3E385D /* Pods_AnimeProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57A57CE31AF9A0E4836F05FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				141E588C0BA5153988A04AD5 /* Pods-AnimeProject.debug.xcconfig */,
+				382E514BA23E0EC4DC30B64D /* Pods-AnimeProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		68A064EB233AA01D00E3894C = {
+			isa = PBXGroup;
+			children = (
+				68A064F6233AA01D00E3894C /* AnimeProject */,
+				68A064F5233AA01D00E3894C /* Products */,
+				57A57CE31AF9A0E4836F05FB /* Pods */,
+				ED235AF7F5B1A324ABB0DBE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68A064F5233AA01D00E3894C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68A064F4233AA01D00E3894C /* AnimeProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68A064F6233AA01D00E3894C /* AnimeProject */ = {
+			isa = PBXGroup;
+			children = (
+				68A06509233AA74100E3894C /* Anime Class */,
+				68A064F7233AA01D00E3894C /* AppDelegate.swift */,
+				68A064F9233AA01D00E3894C /* ViewController.swift */,
+				68A064FB233AA01D00E3894C /* Main.storyboard */,
+				68A064FE233AA01E00E3894C /* Assets.xcassets */,
+				68A06500233AA01E00E3894C /* LaunchScreen.storyboard */,
+				68A06503233AA01E00E3894C /* Info.plist */,
+			);
+			path = AnimeProject;
+			sourceTree = "<group>";
+		};
+		68A06509233AA74100E3894C /* Anime Class */ = {
+			isa = PBXGroup;
+			children = (
+				68A0650A233AA78000E3894C /* Anime.swift */,
+				68A0650C233AA7AC00E3894C /* AnimeCell.swift */,
+				68A0650E233AA7CA00E3894C /* DetalleAnime.swift */,
+			);
+			path = "Anime Class";
+			sourceTree = "<group>";
+		};
+		ED235AF7F5B1A324ABB0DBE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E40E31E44447AA593458908 /* Pods_AnimeProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68A064F3233AA01D00E3894C /* AnimeProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68A06506233AA01E00E3894C /* Build configuration list for PBXNativeTarget "AnimeProject" */;
+			buildPhases = (
+				D61609F57F49D9CF463096FC /* [CP] Check Pods Manifest.lock */,
+				68A064F0233AA01D00E3894C /* Sources */,
+				68A064F1233AA01D00E3894C /* Frameworks */,
+				68A064F2233AA01D00E3894C /* Resources */,
+				F44C7C0F882A7895F884DA87 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimeProject;
+			productName = AnimeProject;
+			productReference = 68A064F4233AA01D00E3894C /* AnimeProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68A064EC233AA01D00E3894C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Miguel Orellana";
+				TargetAttributes = {
+					68A064F3233AA01D00E3894C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 68A064EF233AA01D00E3894C /* Build configuration list for PBXProject "AnimeProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68A064EB233AA01D00E3894C;
+			productRefGroup = 68A064F5233AA01D00E3894C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68A064F3233AA01D00E3894C /* AnimeProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68A064F2233AA01D00E3894C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A06502233AA01E00E3894C /* LaunchScreen.storyboard in Resources */,
+				68A064FF233AA01E00E3894C /* Assets.xcassets in Resources */,
+				68A064FD233AA01D00E3894C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D61609F57F49D9CF463096FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimeProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F44C7C0F882A7895F884DA87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AnimeProject/Pods-AnimeProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimeProject/Pods-AnimeProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68A064F0233AA01D00E3894C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A0650D233AA7AC00E3894C /* AnimeCell.swift in Sources */,
+				68A0650F233AA7CA00E3894C /* DetalleAnime.swift in Sources */,
+				68A064FA233AA01D00E3894C /* ViewController.swift in Sources */,
+				68A064F8233AA01D00E3894C /* AppDelegate.swift in Sources */,
+				68A0650B233AA78000E3894C /* Anime.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68A064FB233AA01D00E3894C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68A064FC233AA01D00E3894C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68A06500233AA01E00E3894C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68A06501233AA01E00E3894C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68A06504233AA01E00E3894C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68A06505233AA01E00E3894C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68A06507233AA01E00E3894C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 141E588C0BA5153988A04AD5 /* Pods-AnimeProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnimeProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sv.edu.udb.AnimeProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68A06508233AA01E00E3894C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 382E514BA23E0EC4DC30B64D /* Pods-AnimeProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AnimeProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sv.edu.udb.AnimeProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68A064EF233AA01D00E3894C /* Build configuration list for PBXProject "AnimeProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A06504233AA01E00E3894C /* Debug */,
+				68A06505233AA01E00E3894C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68A06506233AA01E00E3894C /* Build configuration list for PBXNativeTarget "AnimeProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A06507233AA01E00E3894C /* Debug */,
+				68A06508233AA01E00E3894C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68A064EC233AA01D00E3894C /* Project object */;
+}
